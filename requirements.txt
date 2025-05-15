@@ -1,0 +1,4 @@
+openai
+whoosh
+python-dotenv   
+streamlit

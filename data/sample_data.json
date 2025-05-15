@@ -1,0 +1,86 @@
+[
+  {
+    "drug": "奥氮平",
+    "english_name": "Olanzapine",
+    "faq": [
+      {"question": "奥氮平用于治疗哪些疾病？", "answer": "奥氮平用于治疗精神分裂症和双相情感障碍。"},
+      {"question": "使用奥氮平有哪些常见副作用？", "answer": "常见副作用包括体重增加、嗜睡、头晕。"}
+    ],
+    "label_excerpt": {
+      "section": "用法用量",
+      "content": "成人起始剂量为每天5-10毫克，根据患者反应逐渐调整，最大不超过20毫克/日。"
+    },
+    "literature": {
+      "title": "Efficacy of Olanzapine in Bipolar Disorder: A Meta-Analysis",
+      "abstract": "Olanzapine has demonstrated significant efficacy in treating manic episodes in bipolar disorder, with notable improvement in symptoms and relapse prevention."
+    }
+  },
+
+  {
+    "drug": "帕罗西汀",
+    "english_name": "Paroxetine",
+    "faq": [
+      {"question": "帕罗西汀的主要用途是什么？", "answer": "用于治疗抑郁症、焦虑症、强迫症和创伤后应激障碍。"},
+      {"question": "服用帕罗西汀有哪些注意事项？", "answer": "避免突然停药，可能会出现头晕、恶心等停药反应，应遵医嘱逐步减量。"}
+    ],
+    "label_excerpt": {
+      "section": "不良反应",
+      "content": "常见不良反应包括恶心、口干、出汗增加、性欲减退、失眠等。"
+    },
+    "literature": {
+      "title": "Comparative Effectiveness of SSRIs: Focus on Paroxetine",
+      "abstract": "Paroxetine, a selective serotonin reuptake inhibitor, is effective for major depressive disorder and anxiety disorders, though it may cause notable withdrawal symptoms."
+    }
+  },
+
+  {
+    "drug": "阿司匹林",
+    "english_name": "Aspirin",
+    "faq": [
+      {"question": "阿司匹林可以预防心脏病吗？", "answer": "低剂量阿司匹林可用于预防心肌梗死和中风，尤其适用于高风险患者。"},
+      {"question": "阿司匹林有哪些禁忌？", "answer": "胃溃疡、出血性疾病患者禁用阿司匹林；也不推荐儿童使用以免诱发瑞氏综合征。"}
+    ],
+    "label_excerpt": {
+      "section": "禁忌",
+      "content": "对水杨酸盐类过敏、有出血倾向或活动性消化道溃疡者禁用。"
+    },
+    "literature": {
+      "title": "Low-Dose Aspirin in Primary Prevention: A Review",
+      "abstract": "Aspirin remains a cornerstone in secondary prevention of cardiovascular disease. In primary prevention, benefits must be balanced against bleeding risk."
+    }
+  },
+
+  {
+    "drug": "美托洛尔",
+    "english_name": "Metoprolol",
+    "faq": [
+      {"question": "美托洛尔适用于哪些疾病？", "answer": "用于治疗高血压、心绞痛、心律失常和心肌梗死后的维持治疗。"},
+      {"question": "使用美托洛尔应注意什么？", "answer": "使用时应监测心率与血压，心动过缓者慎用；不得突然停药以免诱发心绞痛或心律失常。"}
+    ],
+    "label_excerpt": {
+      "section": "警告",
+      "content": "应逐渐减量停药，避免突然中断治疗；心功能不全患者使用需严密监测。"
+    },
+    "literature": {
+      "title": "Role of Metoprolol in Post-Myocardial Infarction Therapy",
+      "abstract": "Metoprolol reduces mortality in patients post-MI by lowering heart rate and myocardial oxygen demand. Its beta-1 selectivity makes it well-tolerated in most patients."
+    }
+  },
+
+  {
+    "drug": "苯海拉明",
+    "english_name": "Diphenhydramine",
+    "faq": [
+      {"question": "苯海拉明的用途有哪些？", "answer": "常用于缓解过敏症状、打喷嚏、流鼻涕，也可用于短期失眠和晕动病。"},
+      {"question": "苯海拉明有哪些副作用？", "answer": "可能引起嗜睡、口干、视力模糊，老年人慎用以避免认知障碍和跌倒风险。"}
+    ],
+    "label_excerpt": {
+      "section": "注意事项",
+      "content": "不建议连续使用超过7天，驾驶及操作机械时需注意其镇静作用。"
+    },
+    "literature": {
+      "title": "Sedative Effects of Diphenhydramine and Antihistamine Use in the Elderly",
+      "abstract": "Diphenhydramine is widely used for allergic conditions and insomnia, but has anticholinergic side effects that may impair cognition, particularly in the elderly."
+    }
+  }
+]
