@@ -10,22 +10,32 @@ def load_faq_from_json(path: str) -> List[Dict]:
     with open(path, 'r', encoding='utf-8') as f:
         raw_data = json.load(f)
 
-    faq_entries = []
+    all_entries = []
     for entry in raw_data:
         drug = entry.get("drug", "")
         english_name = entry.get("english_name", "")
+        label_excerpt = entry.get("label_excerpt", {})
+
         for qa in entry.get("faq", []):
-            faq_entries.append({
+            all_entries.append({
                 "drug": drug,
                 "english_name": english_name,
                 "question": qa.get("question", ""),
-                "answer": qa.get("answer", "")
+                "answer": qa.get("answer", ""),
+                "label_excerpt": label_excerpt,
             })
-    return faq_entries
+        if not entry.get("faq") and label_excerpt:
+            all_entries.append({
+                "drug": drug,
+                "english_name": english_name,
+                "question": None,
+                "answer": None,
+                "label_excerpt": label_excerpt
+            })
+    return all_entries
 
 
 if __name__ == "__main__":
-    # 测试读取
     data = load_faq_from_json("../data/sample_data.json")
     for d in data:
         print(d)
