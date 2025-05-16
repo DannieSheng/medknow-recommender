@@ -1,4 +1,5 @@
 import os
+import shutil
 from typing import List, Dict
 from whoosh.index import create_in, open_dir
 from whoosh.fields import Schema, TEXT
@@ -19,11 +20,9 @@ def build_faq_index(data: List[Dict], index_dir: str = INDEX_DIR):
     构建Whoosh索引（每次重建）
     :param data: List of dicts with drug, english_name, question, answer
     """
-    if not os.path.exists(index_dir):
-        os.mkdir(index_dir)
-    else:
-        for f in os.listdir(index_dir):
-            os.remove(os.path.join(index_dir, f))
+    if os.path.exists(index_dir):
+        shutil.rmtree(index_dir)
+    os.makedirs(index_dir)
 
     ix = create_in(index_dir, schema)
     writer = ix.writer()
@@ -38,7 +37,6 @@ def build_faq_index(data: List[Dict], index_dir: str = INDEX_DIR):
 
 def search_faq(drug_name: str, index_dir: str = INDEX_DIR, top_k: int = 5) -> List[Dict]:
     """
-    支持通过 drug 或 english_name 检索FAQ条目
     """
     ix = open_dir(index_dir)
     parser = MultifieldParser(["drug", "english_name"], schema=ix.schema)
