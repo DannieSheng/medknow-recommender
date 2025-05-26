@@ -29,3 +29,5 @@ logs/
 *.sqlite
 
 notebooks/
+
+**backup**
